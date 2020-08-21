@@ -57,7 +57,7 @@
             </li>
             <!-- Nav Item -->
             <li>
-              <a href="#" data-scrollto="features">About</a>
+              <a href="#" data-scrollto="about">About</a>
             </li>
             <li>
               <a href="https://frontend-devops.com/" target="_blank">Blog</a>
@@ -81,7 +81,8 @@
     <div class="main" role="main">
       <!-- Hero -->
       <div
-        class="ui-hero hero-lg hero-center hero-svg-layer-2 bg-indigo ui-tilt"
+        class="ui-hero hero-lg hero-center hero-svg-layer-2 bg-indigo ui-tilt section "
+        id="home"
       >
         <div class="container">
           <div class="row">
@@ -131,8 +132,8 @@
             <img
                 src="assets/img/mockups/coder_img.png"
                 data-uhd
-                data-max_width="850"
-                alt="Leadbase - Application Screenshot"
+                data-max_width="750"
+                alt="a coder"
                 id="hero-image"
               />
             </div>
@@ -141,43 +142,17 @@
         <!-- .container -->
       </div>
       <!-- .ui-hero -->
-
-      <!-- UI Hero Subsection-->
-      <div class="hero-subsection">
-        <div class="container tilt">
-          <div class="row">
-            <div
-              class="col-md-7 hero-container-subsection"
-              data-vertical_center="true"
-            >
-              <h2 class="heading hero-subsection-title">
-                Lavi labs
-              </h2>
-              <p class="paragraph">
-                is a software development company, focusing on webapps, Prototypes and devOps
-              </p>
-              <div class="mt-4">
-                <a href="#" class="btn shadow-xl" data-scrollto="features"
-                  >Learn More</a
-                >
-              </div>
-              <!-- Call to action buttons -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section container">
+      <div class="section container" id="about">
         <div class="section-heading center">
           <h2 class="heading text-indigo">
             What can we do for you ?
           </h2>
           <p class="paragraph">
-            With the right tools, finding and reaching your customers has never
-            been easier.
+            catchy phrase 
           </p>
         </div>
 
-        <ul class="section features" id="features">
+        <ul class="section features" >
           <li class="value-prop-card-container">
             <div class="value-prop-card shadow-xl-purple">
             
@@ -224,7 +199,7 @@
               well, now it's your turn!
             </p>
             <div class="mt-4">
-              <a href="#" class="btn shadow-xl" data-scrollto="features"
+              <a href="#" class="btn shadow-xl" data-scrollto="contact"
                 >Be awesome</a
               >
             </div>
@@ -280,6 +255,86 @@
           </div>
         </div>
       </div>
+      <!--  Section -->
+	<div class="section contact-section" id="contact" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="section-heading mb-2">
+						<h3 class="heading text-indigo">Send a message</h3>
+						<p>
+              Reach us for any clarification, inquiry, or suggestions 
+						</p>
+					</div>
+					<!-- Form -->
+					<form autocomplete="on" id="contact-form" name="contact-form">
+						<div class="form-group">
+							<div class="form-group">
+								<!-- Name Input -->
+								<input autocomplete="name" class="input form-control" data-validation="required"
+								       data-validation-error-msg="Please enter your full name." name="name"
+								       placeholder="Your Name *">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-6">
+									<!-- Email Input -->
+									<input autocomplete="email" class="input form-control" data-validation="required"
+									       data-validation-error-msg="Please enter your email address." name="email"
+									       placeholder="Email Address *">
+								</div>
+								<div class="col-sm-6">
+									<!-- Phone Input -->
+									<input autocomplete="tel" class="input form-control" data-validation="required"
+									       data-validation-error-msg="Please enter your phone number." name="phone"
+									       placeholder="Phone Number *">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea class="input form-control" data-validation="required"
+							          data-validation-error-msg="Please leave a message." name="message"
+							          placeholder="Your Message" rows="3"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-block shadow-md">Submit</button>
+					</form><!-- Form -->
+				</div>
+				<div class="col-md-5">
+					<div class="ui-card form-card shadow-xl bg-indigo">
+						<div class="card-header pb-0">
+							<h3 class="heading">Contact Info</h3>
+						</div>
+						<div class="card-body">
+							<ul class="ui-icon-blocks ui-blocks-v">
+								<li class="ui-icon-block">
+									<span class="icon icon-clock"></span>
+									<p>Mon - Fri 08:00 - 19:00</p>
+								</li>
+								<li class="ui-icon-block">
+									<span class="icon icon-phone"></span>
+									<p>+10 111 0000</p>
+								</li>
+								<li class="ui-icon-block">
+									<span class="icon icon-envelope"></span>
+									<p>info@mail.com</p>
+								</li>
+								<li class="ui-icon-block">
+									<span class="icon icon-basket"></span>
+									<p>sales@mail.com</p>
+								</li>
+								<li class="ui-icon-block">
+									<span class="icon icon-pin"></span>
+									<p>101 Street Address, <br>Suburb, <br>City, <br>0101</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .container -->
+	</div><!-- .section -->
       <!-- Footer -->
       <footer class="ui-footer bg-indigo">
         <div class="container pt-4 pb-4">
@@ -288,7 +343,7 @@
               class="col-md-6 col-sm-8 footer-about footer-col center-on-sm footer-logo"
             >
               <img
-                src="assets/img/logo/leadbase-logo-white.png"
+                src="assets/img/logo/lavi-logo-white.png"
                 data-uhd
                 alt="LeadBase Logo"
               />

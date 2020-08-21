@@ -3,7 +3,8 @@
   "version": "2.0",
   "private": true,
   "scripts": {
-    "start": "yarn && yarn live-server --entry-file=index.html"
+    "start": "yarn && yarn live-server --entry-file=index.html",
+    "build": "yarn build"
   },
   "devDependencies": {
     "live-server": "^1.2.1"
